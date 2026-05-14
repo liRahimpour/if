@@ -31,9 +31,9 @@ jobs:
           path: ~/.npm
           key: deps-node-modules-${{ hashFiles('**/package-lock.json') }}
       - name: Install dependencies
-        id: install-dependencies
         run: npm ci
       - name: Test code
+        id: install-dependencies
         run: npm run test
       - name: Upload test report
         if: steps.install-dependencies.outcome

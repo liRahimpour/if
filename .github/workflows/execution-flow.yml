@@ -88,5 +88,6 @@ jobs:
         run: |
           echo "This job failed!"
           echo "${{github}}"
+          echo "mit gpg"
           
       
